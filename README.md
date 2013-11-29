@@ -1,0 +1,4 @@
+NIFTi_OCU
+=========
+
+ The Operator Control Unit (OCU) is a multi-modal control software for the NIFTi robots. The OCU integrates input from all partners of the NIFTi project as it was designed specifically for that project. However, it can be used for any standard ROS-enabled robot. The basic inputs/outputs are twist messages, maps, point clouds, camera feeds, etc.  If need be, the OCU can be modified to read from different topics or display different elements. The code is heavily based on RVIZ, therefore RVIZ can be used as a debugging tool for extending the OCU.  One of the obvious advantages over RVIZ is the possibility to display up to four view points on the scene at once. For example, a top-down view of the environment, a close-up 3D view following the robot, a panoramic view, and a thermal camera output overlaid with the virtual scene. 
