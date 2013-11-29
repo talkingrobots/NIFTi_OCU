@@ -1,0 +1,5 @@
+# Benoit 2011-04-15
+
+int8 numRequested
+---
+int16[] uuids

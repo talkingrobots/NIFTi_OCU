@@ -1,0 +1,13 @@
+<package>
+  <description brief="eu_nifti_cast">
+
+     Contains data structures that already exist in CAST
+
+  </description>
+  <author>Benoit Larochelle</author>
+  <license>To be determined</license>
+  <depend package="rospy"/>
+  <depend package="roscpp"/>
+</package>
+
+

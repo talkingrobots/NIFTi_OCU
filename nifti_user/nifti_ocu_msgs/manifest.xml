@@ -1,0 +1,15 @@
+<package>
+  <description brief="nifti_ocu_msgs">
+
+     nifti_ocu_msgs
+
+  </description>
+  <author>Benoit Larochelle</author>
+  <license>To be determined</license>
+  <depend package="rospy"/>
+  <depend package="roscpp"/>
+  <depend package="geometry_msgs"/>
+
+</package>
+
+

@@ -1,0 +1,22 @@
+<package>
+    <description brief="Ogre Tools">
+    
+    Internal package, shared code for use by the visualization stack, nav_view, and the simulation stack.  No supported/stable API is exported.
+    
+    </description>
+    <author>Josh Faust</author>
+    <license>BSD</license>
+    <review status="doc reviewed" notes="2009/08/04 by kwc"/>
+    <url>http://pr.willowgarage.com/wiki/ROS</url>
+ <!--   <depend package="wxswig"/> -->
+    <depend package="ogre"/>
+    <depend package="rosconsole"/>
+    <depend package="roslib"/>
+    <export> 
+        <cpp cflags="-I${prefix}/src/" lflags="-Wl,-rpath,${prefix}/lib -L${prefix}/lib -logre_tools_diamond_back"/>
+        <python path="${prefix}/lib/"/>
+    </export>
+    <rosdep name="wxwidgets"/>
+  <platform os="ubuntu" version="12.04"/>
+</package>
+

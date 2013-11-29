@@ -1,0 +1,17 @@
+<package>
+  <description brief="monitoring_msgs">
+
+     monitoring_msgs
+
+  </description>
+  <author>Thorsten Linder</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/monitoring_msgs</url>
+  <depend package="std_msgs"/>
+  <depend package="geometry_msgs"/>
+  <depend package="nav_msgs"/>
+
+</package>
+
+

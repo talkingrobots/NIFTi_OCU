@@ -1,0 +1,34 @@
+/**
+\mainpage
+\htmlinclude manifest.html
+
+\b nifti_robot_driver_msgs is the package containing the message specification for <a href="../../nifti_robot_driver/html/index.html">nifti_robot_driver</a>.
+
+The following messages are defined:
+- <a href="../../nifti_robot_driver_msgs/html/msg/ControllersStatus.html">ControllersStatus</a> (used only for \c RobotStatus),
+- <a href="../../nifti_robot_driver_msgs/html/msg/RobotStatus.html">RobotStatus</a>,
+- <a href="../../nifti_robot_driver_msgs/html/msg/FlippersState.html">FlippersState</a>,
+- <a href="../../nifti_robot_driver_msgs/html/msg/Currents.html">Currents</a>,
+- <a href="../../nifti_robot_driver_msgs/html/msg/Tracks.html">Tracks</a>,
+- <a href="../../nifti_robot_driver_msgs/html/msg/FlipperCommand.html">FlipperCommand</a>.
+
+<!-- 
+Provide an overview of your package.
+-->
+
+<!--
+\section codeapi Code API
+-->
+<!--
+Provide links to specific auto-generated API documentation within your
+package that is of particular interest to a reader. Doxygen will
+document pretty much every part of your code, so do your best here to
+point the reader to the actual API.
+
+If your codebase is fairly large or has different sets of APIs, you
+should use the doxygen 'group' tag to keep these APIs together. For
+example, the roscpp documentation has 'libros' group.
+-->
+
+
+*/

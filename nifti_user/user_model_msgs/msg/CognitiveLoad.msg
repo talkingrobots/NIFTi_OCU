@@ -1,0 +1,6 @@
+time stamp
+string userID
+
+float32 levelOfInformationProcessing
+float32 mentalOccupancy
+float32 taskSetSwitching

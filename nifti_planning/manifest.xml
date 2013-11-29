@@ -1,0 +1,15 @@
+<package>
+  <description brief="eclipse_prolog_msgs">
+
+     eclipse_prolog_msgs
+
+  </description>
+  <author>mario</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/eclipse_prolog_msgs</url>
+    <depend package="std_msgs"/>
+
+</package>
+
+

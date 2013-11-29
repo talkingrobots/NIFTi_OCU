@@ -1,0 +1,30 @@
+<stack>
+  <description brief="Hardware drivers for the NIFTi robots">
+
+     Hardware drivers for the NIFTi robots  The project can be found at <a href="http://www.nifti.eu/">NIFTi</a>. 
+
+     It would be good to check the dependencies, because some might be superfluous
+
+     These packages are necessary (from the ROS website): sicktoolbox, sicktoolbox_wrapper, ptu46
+
+     Benoit Larochelle modified the pioneer3dx_driver for a few tweaks, and usb_cam to add a frame_id
+
+  </description>
+  <author>Various NIFTi project partners, mostly Blue Botics and ETHZ</author>
+  <license>To be defined</license>  
+  <review status="N/A" notes="2010/11/10"/>
+  <url>http://www.nifti.eu</url>
+  
+  <depend stack="common" /> <!-- yaml_cpp -->
+  <depend stack="common_msgs" /> <!-- nav_msgs, geometry_msgs, sensor_msgs -->
+  <depend stack="diagnostics" /> <!-- diagnostic_updater -->
+  <depend stack="driver_common" /> <!-- dynamic_reconfigure, driver_base -->
+  <depend stack="geometry" /> <!-- tf -->
+  <depend stack="ros" /> <!-- rxtools, rosconsole, roscpp, message_filters, wxswig, roslib, std_msgs, wxPython_swig_interface, rospy, rxbag -->
+  <depend stack="image_common" /> <!-- camera_info_manager, image_transport -->
+  <depend stack="nifti_vision" /> <!-- nifti_image_proc, vision_msgs -->
+  <depend stack="nodelet_core" /> <!-- nodelet -->
+  <depend stack="vision_opencv" />
+  <depend stack="perception_pcl" /> <!-- pcl_ros -->
+  
+</stack>

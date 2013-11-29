@@ -1,0 +1,11 @@
+<package>
+  <description brief="Ladybug 3 omnicamera messages.">
+
+  </description>
+  <author>Tomas Petricek</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes="" />
+  
+  <url>http://nifti.eu/</url>
+  
+</package>

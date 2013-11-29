@@ -1,0 +1,19 @@
+<package>
+  <description brief="eu_nifti_ocu_msg_ros">
+
+     eu_nifti_ocu_msg_ros
+
+  </description>
+  <author>Benoit Larochelle</author>
+  <license>To be determined</license>
+  <depend package="rospy"/>
+  <depend package="roscpp"/>
+  <depend package="eu_nifti_cast"/>
+  <depend package="eu_nifti_env"/>
+  <export>
+    <cpp cflags="-I${prefix}/include" lflags="-Wl,-rpath,${prefix}/lib -L${prefix}/lib"/>
+  </export>
+
+</package>
+
+

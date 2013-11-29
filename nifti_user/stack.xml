@@ -1,0 +1,11 @@
+<stack>
+  <description brief="User interaction tools for the NIFTi project">
+
+     Contains all packages that are exclusively related to the end users. 
+
+  </description>
+  <author>Benoit Larochelle (main), but also other NIFTi project partners</author>
+  <license>To be defined</license>  
+  <review status="New" notes="2012/09/21"/>
+  <url>http://www.nifti.eu</url>
+</stack>

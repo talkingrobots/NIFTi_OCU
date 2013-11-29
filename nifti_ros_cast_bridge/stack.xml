@@ -1,0 +1,13 @@
+<stack>
+  <description brief="Tools for converting data between ROS and CAST">
+
+     Tools for converting data between ROS and CAST. For example, a node that reads from ROS topics and writes to CAST subarchitectures.  The project can be found at <a href="http://www.nifti.eu/">NIFTi</a>. 
+
+  </description>
+  <author>Benoit Larochelle (main), but also other NIFTi project partners</author>
+  <license>To be defined</license>  
+  <review status="New" notes="2011/05/10"/>
+  <url>http://www.nifti.eu</url>
+  <depend stack="common" /> <!-- yaml_cpp -->
+  <depend stack="ros" /> <!-- roslib -->
+</stack>

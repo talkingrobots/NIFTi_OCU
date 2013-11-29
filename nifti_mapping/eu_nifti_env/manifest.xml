@@ -1,0 +1,21 @@
+<package>
+  <description brief="eu_nifti_env">
+
+     eu_nifti_env
+
+  </description>
+  <author>Benoit Larochelle</author>
+  <license>To be determined</license>
+  <depend package="rospy"/>
+  <depend package="roscpp"/>
+  <depend package="geometry_msgs"/>
+
+  <!-- Should be depreciated -->
+	<!--
+	<export>
+    <cpp cflags="-I${prefix}/include" lflags="-Wl,-rpath,${prefix}/lib -L${prefix}/lib -leu_nifti_env"/>
+  </export>
+	-->
+</package>
+
+

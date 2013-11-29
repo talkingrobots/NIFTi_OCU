@@ -1,0 +1,17 @@
+<package>
+  <description brief="nifti_robot_driver_msgs">
+
+     nifti_robot_driver_msgs
+
+  </description>
+  <author>Francis Colas</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/nifti_robot_driver_msgs</url>
+  <depend package="std_msgs"/>
+  <depend package="geometry_msgs"/>
+  <depend package="nav_msgs"/>
+
+</package>
+
+

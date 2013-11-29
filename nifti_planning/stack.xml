@@ -1,0 +1,14 @@
+<stack>
+  <description brief="ROS-Eclipse interface  for the NIFTi project">
+		The project can be found at <a href="http://www.nifti.eu/">NIFTi</a>. 
+  </description>
+  <author>Mario Gianni (main), but also other NIFTi project partners</author>
+  <license>To be defined</license>  
+  <review status="New" notes="2011/03/21"/>
+  <url>http://www.nifti.eu</url>
+  <depend stack="common" /> <!-- yaml_cpp -->
+  <depend stack="common_msgs" /> <!-- nav_msgs, sensor_msgs, geometry_msgs, visualization_msgs -->
+  <depend stack="geometry" /> <!-- tf -->
+  <depend stack="ros" /> <!-- roslib -->
+  <depend stack="navigation" />
+</stack>

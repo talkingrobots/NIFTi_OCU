@@ -1,0 +1,18 @@
+<package>
+  <description brief="uuid_manager">
+
+     uuid_manager
+
+  </description>
+  <author>Benoit Larochelle</author>
+  <license>To be determined</license>
+
+<!--
+  <depend package="rospy"/>
+  <depend package="roscpp"/> -->
+
+  <depend package="eu_nifti_env_msg_ros"/>
+
+</package>
+
+
