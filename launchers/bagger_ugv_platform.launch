@@ -1,0 +1,4 @@
+<launch>
+	<node name="rosbag_record_ugv_platform" pkg="rosbag" type="record" output="screen" args="/thermo_camera/camera_info /thermo_camera/detections/theora /viz/pano/image/theora /viz/pano/image/theora/parameter_descriptions /viz/pano/image/theora/parameter_updates /viz/ptz/camera_info /viz/ptz/config /viz/ptz/image/theora /viz/ptz/image/theora/parameter_descriptions /viz/ptz/image/theora/parameter_updates /openni_camera/detections/theora /openni_camera/detections/theora/parameter_descriptions /openni_camera/detections/theora/parameter_updates -O /home/robot/Y4_End_User_Eval/RENAME_ME.bag">		
+	</node>
+</launch>

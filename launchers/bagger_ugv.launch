@@ -1,0 +1,9 @@
+<launch>
+	<node name="rosbag_record" pkg="rosbag" type="record" output="screen" args="/autonomous_flippers/control /tf /map /monitoring/wifiLink /robot_status /currents /flippers_state /inFieldPicsServer/modify /inFieldPicsServer/new /traveledPath /viz/pano/image/compressed /viz/pano/image/compressed/parameter_descriptions /viz/pano/image/compressed/parameter_updates /viz/ptz/camera_info /viz/ptz/config /viz/ptz/image/compressed /viz/ptz/image/compressed/parameter_descriptions /viz/ptz/image/compressed/parameter_updates /scan2d /cmd_vel /point_map /dynamic_point_cloud /ocu/dialogue /ocu/info /ocu/robotControl /ocu/selection /ocu/selectionPicture /ocu/toolActivation /ocu/viewControl -O /DATA/bag.bag">		
+	</node>
+</launch>
+
+
+
+<!-- Need to add Francis' MUX, /eoi, /eoi_confirmation, /eoi/draw, and maybe others -->
+<!-- Check what /odom is -->

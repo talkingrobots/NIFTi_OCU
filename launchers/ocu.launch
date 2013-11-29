@@ -1,0 +1,27 @@
+<!-- This launch file is used by Ben for development -->
+
+<launch> 
+
+	<node name="$(anon ocu)" pkg="ocu" type="OCU" output="screen">
+
+		<!-- Loads the OCU default parameters -->
+		<rosparam command="load" file="$(find ocu)/launchers/ocu.yaml"/>
+
+		<!-- Redefines and adds parameters -->
+
+		<param name="showDialoguePanel" value="true"/>
+		<param name="showRightPanel" value="true"/>
+		<param name="showUGVCams" value="true"/>
+		<param name="showDebugCams" value="true"/>
+		<param name="showDebugTools" value="true"/>
+		<param name="show3DMap" value="true"/>
+
+                <param name="imageTransportMode" value="compressed"/>
+
+		<!-- These ones are necessary until it is placed in the yaml file -->
+		<param name="ugv3DModelDescription" textfile="$(find ocu)/media/robot_model/2012-11/nifti_robot.urdf" />
+		<!-- <param name="ugv3DModelDescription" textfile="$(find nifti_robot_driver)/robot_model/nifti_robot.urdf" /> -->
+
+	</node>
+
+</launch>

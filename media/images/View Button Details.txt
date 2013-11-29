@@ -1,0 +1,9 @@
+The new buttons are 4 X minimal button size = 192 X 192
+
+The space for the text is 32 pixels high, leaving 192 X 160 for the thumbnail.
+
+
+The text is in Arial 14. The cursor is at 96,18 using centered label
+
+There is a 4-point wide black border around the whole image, with transparent corners
+

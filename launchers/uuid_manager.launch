@@ -1,0 +1,8 @@
+<launch>
+  <!--
+    Launches the UUID manager.
+  -->
+  
+  <node name="uuid_manager" pkg="uuid_manager" type="uuid_manager" output="screen"/>
+    
+</launch>

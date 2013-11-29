@@ -1,0 +1,22 @@
+<!-- This is a template launch file -->
+<!-- Copy and paste it to create your specialized own -->
+
+<launch> 
+
+	<node name="$(anon ocu)" pkg="ocu" type="OCU" output="screen">
+	
+		<!-- Loads the OCU default parameters -->
+
+		<rosparam command="load" file="$(find ocu)/launchers/ocu.yaml"/>
+
+		<!-- Redefines and adds parameters -->
+
+		<param name="foo" value="bar"/>
+
+		<!-- These ones are necessary until it is placed in the yaml file -->
+		<param name="ugv3DModelDescription" textfile="$(find ocu)/media/robot_model/2012-11/nifti_robot.urdf" />
+		<!-- <param name="ugv3DModelDescription" textfile="$(find nifti_robot_driver)/robot_model/nifti_robot.urdf" /> -->
+
+	</node>
+
+</launch>

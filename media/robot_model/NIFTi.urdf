@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<robot name="NIFTi">
+	<link name="base_link">
+
+		<visual>
+			<origin xyz="0 0 -0.08" rpy="1.57 0 1.57" />
+			<geometry>
+				<mesh scale="0.115 0.115 0.115" filename="package://ocu/media/robot_model/Robot_naked.stl" />
+			</geometry>
+			<material name="white">
+			        <color rgba="1 1 1 1"/>
+			</material>
+		</visual>
+	   	
+	</link>
+
+        <link name="left_track">
+
+		<visual>
+			<origin xyz="0 0 -0.08" rpy="1.57 0 1.57" />
+			<geometry>
+				<mesh scale="-0.115 0.115 0.115" filename="package://ocu/media/robot_model/Robot_bogie.stl" />
+			</geometry>
+                        <material name="gray">
+			        <color rgba="0.8 0.8 0.8 1"/>
+			</material>
+		</visual>
+	   	
+	</link>
+
+        <link name="right_track">
+
+		<visual>
+			<origin xyz="0 0 -0.08" rpy="1.57 0 1.57" />
+			<geometry>
+				<mesh scale="0.115 0.115 0.115" filename="package://ocu/media/robot_model/Robot_bogie.stl" />
+			</geometry>
+                        <material name="gray"/>
+		</visual>
+	   	
+	</link>
+
+
+
+
+	<link name="front_left_flipper">
+
+		<visual>
+			<origin xyz="0 0 0" rpy="3.3 0 1.57" />
+			<geometry>
+				<mesh scale="0.115 0.115 0.115" filename="package://ocu/media/robot_model/flipper_normalized4.stl" />
+			</geometry>
+			<material name="white"/>
+		</visual>
+
+	</link>
+
+  
+	<link name="front_right_flipper">
+   
+		<visual>
+			<origin xyz="0 0 0" rpy="3.3 0 1.57" />
+			<geometry>
+				<mesh scale="-0.115 0.115 0.115" filename="package://ocu/media/robot_model/flipper_normalized4.stl" />
+			</geometry>
+			<material name="white"/>
+		</visual>
+    
+	</link>
+
+
+ 
+	<link name="rear_left_flipper">
+  
+		<visual>
+			<origin xyz="0 0 0" rpy="-2.95 0 1.57" />
+			<geometry>
+				<mesh scale="0.115 0.115 0.115" filename="package://ocu/media/robot_model/flipper_normalized4.stl" />
+			</geometry>
+			<material name="white"/>
+		</visual>
+    
+	</link>
+
+
+
+	<link name="rear_right_flipper">
+   
+		<visual>
+			<origin xyz="0 0 0" rpy="-2.95 0 1.57" />
+			<geometry>
+				<mesh scale="-0.115 0.115 0.115" filename="package://ocu/media/robot_model/flipper_normalized4.stl" />
+			</geometry>
+			<material name="white"/>
+		</visual>
+    
+	</link>
+
+
+
+        <joint name="left_joint" type="revolute">
+		<parent link="base_link"/>
+	    	<child link="left_track"/>
+		<limit lower="0" upper="0" effort="0" velocity="0" />
+	</joint>
+
+        <joint name="right_joint" type="revolute">
+		<parent link="base_link"/>
+	    	<child link="right_track"/>
+		<limit lower="0" upper="0" effort="0" velocity="0" />
+	</joint>
+
+
+	<joint name="FL_joint" type="revolute">
+		<parent link="left_track"/>
+	    	<child link="front_left_flipper"/>
+		<limit lower="0" upper="0" effort="0" velocity="0" />
+	</joint>
+
+	<joint name="FR_joint" type="revolute">
+	    	<parent link="right_track"/>
+	    	<child link="front_right_flipper"/>
+		<limit lower="0" upper="0" effort="0" velocity="0" />
+	</joint>
+
+
+	<joint name="BL_joint" type="revolute">
+	    	<parent link="left_track"/>
+	    	<child link="rear_left_flipper"/>
+		<limit lower="0" upper="0" effort="0" velocity="0" />
+	</joint>
+
+	<joint name="BR_joint" type="revolute">
+	    	<parent link="right_track"/>
+	    	<child link="rear_right_flipper"/>
+		<limit lower="0" upper="0" effort="0" velocity="0" />
+	</joint>
+
+</robot>

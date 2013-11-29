@@ -1,0 +1,4 @@
+<launch>
+	<node name="rosbag_record" pkg="rosbag" type="record" output="screen" args=" /map /map_metadata /monitoring/batteryInfo /monitoring/wifiLink /scan /slam_cloud /slam_out_pose /tf /uav_manager /uav_status /viz/uav_cam_down/camera_info /viz/uav_cam_down/image/compressed /viz/uav_cam_down/image/compressed/parameter_descriptions /viz/uav_cam_down/image/compressed/parameter_updates /viz/uav_cam_front/camera_info /viz/uav_cam_front/image/compressed /viz/uav_cam_front/image/compressed/parameter_descriptions /viz/uav_cam_front/image/compressed/parameter_updates /viz/uav_cam_front/image/compressedDepth/parameter_descriptions /viz/uav_cam_front/image/compressedDepth/parameter_updates /ocu/info /ocu/screenshot /ocu/viewControl -O /DATA/RENAME_ME.bag">		
+	</node>
+</launch>

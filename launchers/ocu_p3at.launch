@@ -1,0 +1,18 @@
+<!-- This launch file is used for the P3AT (DFKI) -->
+
+<launch> 
+
+	<node name="$(anon ocu)" pkg="ocu" type="OCU" output="screen">
+
+		<!-- Loads the OCU default parameters -->
+	
+		<rosparam command="load" file="$(find ocu)/launchers/ocu.yaml"/>
+
+		<!-- Redefines and adds parameters -->
+
+		<param name="showRightPanel" value="true"/>
+                <param name="robotType" value="P3AT"/>
+		
+	</node>
+	
+</launch>

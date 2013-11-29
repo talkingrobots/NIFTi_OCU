@@ -1,0 +1,57 @@
+<package>
+    <description brief="NIFTi OCU">
+    
+    The NIFTi Operator Control Unit (OCU), based on RVIZ
+    
+    </description>
+    <author>Benoit Larochelle</author>
+    <license>To be defined</license>
+    <review status="In development" notes=""/>
+    <url>Benoit.Larochelle@dfki.de</url>
+
+    <!-- RVIZ dependencies -->
+    <depend package="ogre"/>
+    <depend package="roscpp"/>
+    <depend package="rosconsole"/>
+    <depend package="image_transport"/>
+    <depend package="geometry_msgs"/>
+    <depend package="laser_geometry"/>
+    <depend package="message_filters"/>
+    <depend package="nav_msgs"/>
+    <depend package="resource_retriever"/>
+    <depend package="sensor_msgs"/>
+    <depend package="std_msgs"/>
+    <depend package="std_srvs"/>
+    <depend package="tf"/>
+    <depend package="urdf"/>
+    <depend package="visualization_msgs" />
+
+    <!-- Old Diamond Back dependencies -->
+    <depend package="ogre_tools_diamond_back"/>
+
+    <!-- NIFTi dependencies -->
+    <depend package="EXIFReader_msgs"/>
+    <depend package="nifti_pics_server_util"/>
+    <depend package="nifti_ocu_msgs"/>
+    <depend package="monitoring_msgs"/>
+    <depend package="omnicamera_msgs"/>
+    <depend package="eclipse_prolog_msgs"/>
+    <depend package="eu_nifti_cast"/>
+    <depend package="eu_nifti_env"/>
+    <depend package="eu_nifti_env_msg_ros"/>
+    <depend package="eu_nifti_ocu_msg_ros"/>
+    <depend package="nifti_robot_driver_msgs"/>
+    <depend package="nifti_arm_msgs"/>
+
+    <export> 
+        <cpp cflags="-I${prefix}/src/" lflags="-Wl,-rpath,${prefix}/lib -L${prefix}/lib -locu"/>
+        <python path="${prefix}/lib/"/>
+    </export>
+
+    <rosdep name="assimp"/>
+    <rosdep name="wxwidgets"/>
+    <rosdep name="wxpython"/>
+    
+    <platform os="ubuntu" version="12.04"/>
+</package>
+

@@ -1,0 +1,5 @@
+<launch>
+	<param name="//use_sim_time" type="bool" value="true"/> 
+	<node name="rosbag_play" pkg="rosbag" type="play" output="screen" args="/media/DATA/Y2\ End\ User\ Eval/ROS\ bags/PP6/2011-12-14-16-40-20.bag /media/DATA/Y2\ End\ User\ Eval/ROS\ bags/PP6/2011-12-14-16-40-21.bag -l --clock">		
+	</node>
+</launch>

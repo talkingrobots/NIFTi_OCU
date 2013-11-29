@@ -1,0 +1,10 @@
+showDialoguePanel: false
+showRightPanel: false
+showDebugCams: false
+showDebugTools: false
+show3DMap: false
+showDebugDisplays: false
+showGapDisplays: false
+robotType: UGV
+#ugv3DModelDescription: ""
+imageTransportMode: theora

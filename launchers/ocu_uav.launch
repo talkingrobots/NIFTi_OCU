@@ -1,0 +1,20 @@
+<!-- This launch file is used for the UAV -->
+
+<launch>
+
+	<node name="$(anon ocu)" pkg="ocu" type="OCU" output="screen">
+
+		<!-- Loads the OCU default parameters -->
+	
+		<rosparam command="load" file="$(find ocu)/launchers/ocu.yaml"/>
+
+		<!-- Redefines and adds parameters -->
+
+		<param name="show3DMap" value="true"/>
+		<param name="robotType" value="UAV"/>
+
+                <param name="imageTransportMode" value="compressed"/>		
+		
+	</node>
+
+</launch>

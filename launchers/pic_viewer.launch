@@ -1,0 +1,5 @@
+<launch> 
+	<node name="$(anon nifti_pic_viewer)" pkg="ocu" type="PictureViewer" output="screen">
+		<!-- <param name="folderNameForScreenshots" type="string" value="/home/robot/Desktop/Screenshots User 1" /> -->
+	</node>
+</launch>

@@ -1,0 +1,6 @@
+<launch> 
+	<node name="$(anon rviz)" pkg="rviz" type="rviz" output="screen"/>
+		
+	<param name="robot_description" textfile="$(find ocu)/media/robot_model/NIFTi.urdf" />
+
+</launch>
